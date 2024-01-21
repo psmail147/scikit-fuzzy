@@ -81,7 +81,7 @@ class Consequent(FuzzyVariable):
     # Customized subclass of `FuzzyVariable`
     output = StatefulProperty(None)
 
-    def __init__(self, universe, label, defuzzify_method='centroid'):
+    def __init__(self, universe, label, defuzzify_method='mom'):
         """""" + Consequent.__doc__
         super(Consequent, self).__init__(universe, label, defuzzify_method)
         self.__name__ = 'Consequent'
